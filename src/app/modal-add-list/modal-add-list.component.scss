@@ -1,0 +1,14 @@
+.status{
+    display: flex;
+    .statusIncome{
+        color: green;
+    }
+    .statusExpense{
+        margin-left: 25px;
+        color: red;
+    }
+    
+}
+form{
+    margin: 8px;
+}

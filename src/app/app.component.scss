@@ -1,0 +1,220 @@
+// .header{
+//     height: 150px;
+//     background-color: #5e889e;
+
+//     h1{
+//     font-size: 50px;
+//     font-weight: bolder;
+//     color: brown;
+//     font-style: normal;
+//     position: absolute;
+//     top: 5%;
+//     left: 6%;
+//     }
+//     .about{
+//     color: white;
+//     font-size: 29px;
+//     font-weight: bold;
+//     left: 84%;
+//     position: absolute;
+//     top: 8%
+//     }
+// }
+
+
+//----- component Balance ------>
+// .containerBalance{
+//     position: relative;
+//     border: 2px dashed #5e889e;
+//     height: 250px;
+//     .imgWallet{
+//         position: absolute;
+//         top: 17px;
+//         left: 70%;
+//     }
+    
+// .sum{
+//     position: absolute;
+//     top: 2%;
+//     left: 10%;
+//     p{
+// text-align: center;
+// color: #5e889e;
+// font-weight: bolder;
+// font-size: 26px;
+// }
+// .balance{
+//     height: 80px;
+//     width: 190px;
+//     border: 2px solid #5e889e;
+//     border-radius: 10px;
+// }
+
+// }
+// .boxIncome{
+//     position: absolute;
+//     top: 140px;
+//     left: 10%;
+//     p{font-size: 18px;
+//     color: green;
+//     margin-bottom: 4px;
+//     }
+//     .income{
+//     height: 40px;
+//     width: 70px;
+//     border: 1px solid #5e889e;
+//     border-radius: 10px;
+//     }
+// }
+// .boxExpense{
+//     position: absolute;
+//     top: 140px;
+//     left: 18%;
+//     p{font-size: 18px;
+//     color: rgb(243, 29, 29);
+//     margin-bottom: 4px;
+//     }
+//     .expense{
+//     height: 40px;
+//     width: 70px;
+//     border: 1px solid #5e889e;
+//     border-radius: 10px;
+//     }
+// }
+// .addList{
+//     position: absolute;
+//     height: 70px;
+//     width: 70px;
+//     border-radius: 50%;
+//     top: 140px;
+//     left: 45%;
+//     background-image: url(https://www.freepnglogos.com/uploads/plus-icon/file-nuvola-green-plus-svg-wikimedia-commons-32.png);
+//     background-size: cover;
+// }
+// .addList:hover{
+//     border: 2px solid green;
+// }
+
+// }
+
+//----- component List ------>
+  
+
+// .search{
+//     margin: 10px;
+//     width: 98%;
+// }
+
+
+
+//----- component modal add list ------>
+
+// .status{
+//     display: flex;
+//     .statusIncome{
+//         color: green;
+//     }
+//     .statusExpense{
+//         margin-left: 25px;
+//         color: red;
+//     }
+    
+// }
+// form{
+//     margin: 8px;
+// }
+
+
+//----- component About ------>
+
+.textAbout{
+    text-align: center;
+    color: white;
+}
+
+
+//----- component Users ------>
+
+.users{
+    display: flex;
+    .user1, .user2, .user3, .user4{
+        height: 262px;
+        width: 150px;
+        border: 1px solid #5e889e;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .nameUser1, .nameUser2, .nameUser3, .nameUser4{
+        text-align: center;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+    .moreUser1, .moreUser2, .moreUser3, .moreUser4{
+        height: 34px;
+        width: 125px;
+        margin: 10px;
+        background-color: #5e889e;
+    }
+    .fotoUser1{
+        background-image: url(https://randomuser.me/api/portraits/women/29.jpg);
+        background-size: cover;
+        height: 160px;
+        width: 138px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .fotoUser2{
+        background-image: url(https://randomuser.me/api/portraits/women/55.jpg);
+        background-size: cover;
+        height: 160px;
+        width: 138px;
+        border-radius: 5px;
+        margin: 5px;
+
+    }.fotoUser3{
+        background-image: url(https://randomuser.me/api/portraits/men/95.jpg);
+        background-size: cover;
+        height: 160px;
+        width: 138px;
+        border-radius: 5px;
+        margin: 5px;
+
+    }.fotoUser4{
+        background-image: url(https://randomuser.me/api/portraits/men/5.jpg);
+        background-size: cover;
+        height: 160px;
+        width: 138px;
+        border-radius: 5px;
+        margin: 5px;
+
+    }
+}
+
+.modalFotoUser1, .modalFotoUser2, .modalFotoUser3, .modalFotoUser4{
+    border: 1px solid #000;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.modalNameUser1, .modalNameUser2, .modalNameUser3, .modalNameUser4{
+    font-weight: bold;
+    margin: 5px;
+} 
+.modalFotoUser1{
+    background-image: url(https://randomuser.me/api/portraits/women/29.jpg);
+}
+.modalFotoUser2{
+    background-image: url(https://randomuser.me/api/portraits/women/55.jpg);
+}
+.modalFotoUser3{
+    background-image: url(https://randomuser.me/api/portraits/men/95.jpg);
+}
+.modalFotoUser4{
+    background-image: url(https://randomuser.me/api/portraits/men/5.jpg);
+}
+
+
+.headerAbout{
+    height: 100px;
+    background-color: #5e889e;
+}
