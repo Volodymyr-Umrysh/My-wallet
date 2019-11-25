@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient} from '@angular/common/http'
+import { HttpClient} from '@angular/common/http';
+import {BalanceService} from '../services/balance.service';
 
 export interface List{
+  checked: boolean;
   date: string
   title: string
   sum: number
@@ -13,31 +15,18 @@ export interface List{
 })
 
 export class ListComponent implements OnInit {
-list: List[]
-  allList:''
-  income:''
-  expense:''
-  search:''
 
-  constructor(private http: HttpClient){
 
+  constructor(private http: HttpClient, public balance:BalanceService){
+console.log(this.balance)
   }
   
 
   ngOnInit() {
-    this.http.get('http://localhost:3000/posts').subscribe((list:[]) => this.list = list)
+   
+    this.balance.getList()
   }
 
-  onDelete(id){
-    this.http.delete(`http://localhost:3000/posts/${id}`).subscribe((list:[]) => this.list = list)
-  }
 
-  onEdit(id){
-    
-    this.http.get(`http://localhost:3000/posts/${id}`).subscribe((res) => res)
-
-  }
-
- 
 
 }

@@ -4,11 +4,16 @@
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All list</button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" [(ngModel)]="allList" href="#">All list</a>
-                    <a class="dropdown-item" [(ngModel)]="income" href="#">Income</a>
-                    <a class="dropdown-item" [(ngModel)]="expense" href="#">Expense</a>
+                    <a class="dropdown-item"  href="#">All list</a>
+                    <a class="dropdown-item"  href="#">Income</a>
+                    <a class="dropdown-item"  href="#">Expense</a>
                 </div>
               </div>
+              <!-- [(ngModel)]="allList"
+              [(ngModel)]="income"
+              [(ngModel)]="expense" -->
+
+
               
 </div>
 <hr>
@@ -27,15 +32,20 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let item of list | filter: search">
-                    <th scope="row">{{item.id}}</th>
-                    <td><div [ngClass]="{'active': item.type === ''}" class="status"></div></td>
+                  <tr *ngFor="let item of balance.list | filter: search  let i=index ">
+                    <th scope="row">{{i+1}}</th>
+                    <td>
+                      <div *ngIf="checked" class="status red"></div>
+                      <div *ngIf="!checked" class="status green"></div>
+
+                    </td>
                     <td>{{item.date | date}}</td>
                     <td>{{item.title}}</td>
                     <td>{{item.sum}}$</td>
-                    <td><button (click)="onEdit(item.id)" class="btn btn-primary">Edit</button></td>
-                    <td><button (click)="onDelete(item.id)" class="btn btn-danger">Delete</button></td>
+                    <td><button (click)="balance.selectItem(item)" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">Edit</button></td>
+                    <td><button (click)="balance.deleteItem(item.id)" class="btn btn-danger">Delete</button></td>
                   </tr>
                 </tbody>
               </table>
+</div>
 </div>
