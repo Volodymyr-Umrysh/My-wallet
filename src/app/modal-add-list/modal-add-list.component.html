@@ -3,51 +3,65 @@
           <div class="modal-content">
             <div class="modal-header">
               <div class="status">
-                <p class="statusIncome"><input type="radio" name="type" value="income" [(ngModel)]="type"><b> Income</b></p><Br> 
-                <p class="statusExpense"><input type="radio" name="type" value="expense"  [(ngModel)]="type"><b> Expense</b></p>
+                <p class="statusIncome">
+                  <input type="radio" name="radio" value="income" [(ngModel)]="type" >
+                  <b> Income</b></p><Br> 
+                <p class="statusExpense">
+                  <input type="radio" name="radio" value="expense" [(ngModel)]="type"  checked><b> Expense</b></p>
               </div>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" #closeWindow >
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <form>
+            <form [formGroup]="form">
                 
                     <div class="form-group">
                       <label for="date">Date</label>
                       <input 
-                      
+                      formControlName="date"
                              name="date" 
                              type="text"
                              placeholder="date"
                              class="form-control"
                              [(ngModel)]="date"
                              bsDatepicker>
-                    </div>
-                    
+                             <div
+                      *ngIf="form.get('date').invalid && form.get('date').touched"
+                      class="validation"><small>Please select a date</small></div>
+                      </div>
+                      
+                      
                     <div class="form-group">
                       <label for="title">Title</label>
                       <input 
-                      
+                             formControlName="title"
                              name="title" 
                              type="text" 
                              class="form-control" 
                              [(ngModel)]="title"
                              placeholder="title">
+                             <div
+                      *ngIf="form.get('title').invalid && form.get('title').touched"
+                      class="validation"><small>Please write title</small></div>
                     </div>
                     <div class="form-group">
                       <label for="sum">Sum</label>
                       <input 
-                     
+                             formControlName="sum"
                              name="sum" 
-                             type="text" 
+                             type= number 
                              class="form-control" 
                              [(ngModel)]="sum"
                              placeholder="sum $">
-                    </div>
+                             <div
+                             *ngIf="form.get('sum').invalid && form.get('title').touched"
+                             class="validation"><small>Please write sum</small></div>
+                           </div>
+                    
                   </form>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button (click)="addList()" type="button" class="btn btn-success">add</button>
+              <button (click)="addList()" [disabled]="form.invalid" type="button" class="btn btn-success" (click)="closeModal()" >add</button>
             </div>
           </div>
         </div>

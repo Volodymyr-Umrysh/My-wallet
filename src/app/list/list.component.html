@@ -1,12 +1,12 @@
 <div class="containerList">
         <div class="input-group search">
-                <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="search...">
+                <input type="text" class="form-control" [(ngModel)]="search" aria-label="Text input with dropdown button" placeholder="search...">
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All list</button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">All list</a>
-                    <a class="dropdown-item" href="#">Income</a>
-                    <a class="dropdown-item" href="#">Expense</a>
+                    <a class="dropdown-item" [(ngModel)]="allList" href="#">All list</a>
+                    <a class="dropdown-item" [(ngModel)]="income" href="#">Income</a>
+                    <a class="dropdown-item" [(ngModel)]="expense" href="#">Expense</a>
                 </div>
               </div>
               
@@ -17,23 +17,24 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Date</th>
                     <th scope="col">Title</th>
                     <th scope="col">Sum</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Delete</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
 
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let item of list">
+                  <tr *ngFor="let item of list | filter: search">
                     <th scope="row">{{item.id}}</th>
-                    <td [ngClass]="{'active': item.type === 'income'}" ></td>
-                    <td>{{item.date}}</td>
+                    <td><div [ngClass]="{'active': item.type === ''}" class="status"></div></td>
+                    <td>{{item.date | date}}</td>
                     <td>{{item.title}}</td>
                     <td>{{item.sum}}$</td>
-                    <td (click)="onEdit(item.id)">Edit</td>
-                    <td (click)="onDelete(item.id)">Delete</td>
+                    <td><button (click)="onEdit(item.id)" class="btn btn-primary">Edit</button></td>
+                    <td><button (click)="onDelete(item.id)" class="btn btn-danger">Delete</button></td>
                   </tr>
                 </tbody>
               </table>

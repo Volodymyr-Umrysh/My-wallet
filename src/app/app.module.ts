@@ -10,7 +10,13 @@ import { HeaderComponent } from './header/header.component';
 import { BalanceComponent } from './balance/balance.component';
 import { ModalAddListComponent } from './modal-add-list/modal-add-list.component';
 import { ListComponent } from './list/list.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FilterPipe } from './pipes/filter.pipe';
+import { AppRoutingModule } from './app-routing.module';
+import { AboutComponent } from './about/about.component';
+import { UsersComponent } from './users/users.component';
+
+
 
 @NgModule({
   declarations: [
@@ -18,14 +24,21 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     BalanceComponent,
     ModalAddListComponent,
-    ListComponent
+    ListComponent,
+    FilterPipe,
+    AboutComponent,
+    UsersComponent
+    
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BsDatepickerModule.forRoot(),
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

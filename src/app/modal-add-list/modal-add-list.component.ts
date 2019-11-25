@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { HttpClient} from '@angular/common/http'
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-modal-add-list',
@@ -8,27 +9,47 @@ import { HttpClient} from '@angular/common/http'
 })
 
 
+
 export class ModalAddListComponent implements OnInit {
+ @ViewChild("closeWindow", {static:false}) closeWindow:ElementRef;
  
-  title =''
-  sum= ''
-  date=''
-  type="income"
+  form: FormGroup;
+
+
+
+  title:string;
+  sum: number;
+  date:string;
+  type:string;
   constructor(private http: HttpClient){
 
   }
   
 
-  ngOnInit() {
-
-  }
-
-  ngDoCheck(){
+  ngOnInit():void {
+this.form=new FormGroup({
+ 
+  date: new FormControl('',Validators.required ),
+  title: new FormControl('',Validators.required ),
+  sum: new FormControl(null,Validators.required)
+})
   }
 
   addList(){
-    this.http.post('http://localhost:3000/posts', {title:this.title, sum:this.sum, date:this.date, type:this.type})
-    .subscribe((res) => console.log(res))
-  }
+  
 
+    this.http.post('http://localhost:3000/posts', {
+      title:this.title, 
+      sum:+this.sum, 
+      date:this.date, 
+      type:this.type})
+    .subscribe((res) => console.log(res))
+    this.form.reset()
+  
+
+  
+  }
+  closeModal(){
+    this.closeWindow.nativeElement.click()
+}
 }

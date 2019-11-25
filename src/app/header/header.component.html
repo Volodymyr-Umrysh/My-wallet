@@ -1,6 +1,11 @@
 <!----- component Header ------>
+
 <header class="header">
         <h1>MY WALLET</h1>
-        <!-- <a type="button" class="btn btn-secondary btn-lg about">About</a> -->
-        <a href="" class="about">About</a>
+       
+        <a [routerLink]="['/']" routerLinkActive="router-link-active"  class="home">Home</a>
+        <a [routerLink]="['/about']" routerLinkActive="router-link-active" class="about">About</a>
+        <a [routerLink]="['/users']" routerLinkActive="router-link-active" class="aboutUsers">Users</a>
+
         </header>
+        <router-outlet></router-outlet>

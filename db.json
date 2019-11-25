@@ -1,18 +1,37 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "sum": 10,
-      "date": "11/03/2019",
-      "type": "income"
+      "title": "hgj",
+      "sum": "10",
+      "date": "2019-11-11T17:40:24.000Z",
+      "type": "income",
+      "id": 4
     },
     {
-      "title": "vbbe",
-      "sum": "3",
-      "date": "2019-11-07T16:59:26.000Z",
+      "title": "asdasdadasd",
+      "sum": "20",
+      "date": "2019-11-14T11:38:22.000Z",
       "type": "expense",
-      "id": 2
+      "id": 5
+    },
+    {
+      "title": "sss",
+      "sum": 20,
+      "date": "2019-11-03T22:00:00.000Z",
+      "type": "expense",
+      "id": 7
+    },
+    {
+      "title": "beer",
+      "sum": 5,
+      "date": "2019-11-03T22:00:00.000Z",
+      "id": 9
+    },
+    {
+      "title": "beer",
+      "sum": 5,
+      "date": "2019-11-06T14:43:41.000Z",
+      "id": 10
     }
   ]
 }

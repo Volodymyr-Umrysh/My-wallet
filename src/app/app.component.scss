@@ -127,94 +127,94 @@
 
 //----- component About ------>
 
-.textAbout{
-    text-align: center;
-    color: white;
-}
+// .textAbout{
+//     text-align: center;
+//     color: white;
+// }
 
 
-//----- component Users ------>
+// //----- component Users ------>
 
-.users{
-    display: flex;
-    .user1, .user2, .user3, .user4{
-        height: 262px;
-        width: 150px;
-        border: 1px solid #5e889e;
-        border-radius: 5px;
-        margin: 5px;
-    }
-    .nameUser1, .nameUser2, .nameUser3, .nameUser4{
-        text-align: center;
-        margin-bottom: 0px;
-        font-weight: bold;
-    }
-    .moreUser1, .moreUser2, .moreUser3, .moreUser4{
-        height: 34px;
-        width: 125px;
-        margin: 10px;
-        background-color: #5e889e;
-    }
-    .fotoUser1{
-        background-image: url(https://randomuser.me/api/portraits/women/29.jpg);
-        background-size: cover;
-        height: 160px;
-        width: 138px;
-        border-radius: 5px;
-        margin: 5px;
-    }
-    .fotoUser2{
-        background-image: url(https://randomuser.me/api/portraits/women/55.jpg);
-        background-size: cover;
-        height: 160px;
-        width: 138px;
-        border-radius: 5px;
-        margin: 5px;
+// .users{
+//     display: flex;
+//     .user1, .user2, .user3, .user4{
+//         height: 262px;
+//         width: 150px;
+//         border: 1px solid #5e889e;
+//         border-radius: 5px;
+//         margin: 5px;
+//     }
+//     .nameUser1, .nameUser2, .nameUser3, .nameUser4{
+//         text-align: center;
+//         margin-bottom: 0px;
+//         font-weight: bold;
+//     }
+//     .moreUser1, .moreUser2, .moreUser3, .moreUser4{
+//         height: 34px;
+//         width: 125px;
+//         margin: 10px;
+//         background-color: #5e889e;
+//     }
+//     .fotoUser1{
+//         background-image: url(https://randomuser.me/api/portraits/women/29.jpg);
+//         background-size: cover;
+//         height: 160px;
+//         width: 138px;
+//         border-radius: 5px;
+//         margin: 5px;
+//     }
+//     .fotoUser2{
+//         background-image: url(https://randomuser.me/api/portraits/women/55.jpg);
+//         background-size: cover;
+//         height: 160px;
+//         width: 138px;
+//         border-radius: 5px;
+//         margin: 5px;
 
-    }.fotoUser3{
-        background-image: url(https://randomuser.me/api/portraits/men/95.jpg);
-        background-size: cover;
-        height: 160px;
-        width: 138px;
-        border-radius: 5px;
-        margin: 5px;
+//     }.fotoUser3{
+//         background-image: url(https://randomuser.me/api/portraits/men/95.jpg);
+//         background-size: cover;
+//         height: 160px;
+//         width: 138px;
+//         border-radius: 5px;
+//         margin: 5px;
 
-    }.fotoUser4{
-        background-image: url(https://randomuser.me/api/portraits/men/5.jpg);
-        background-size: cover;
-        height: 160px;
-        width: 138px;
-        border-radius: 5px;
-        margin: 5px;
+//     }.fotoUser4{
+//         background-image: url(https://randomuser.me/api/portraits/men/5.jpg);
+//         background-size: cover;
+//         height: 160px;
+//         width: 138px;
+//         border-radius: 5px;
+//         margin: 5px;
 
-    }
-}
+//     }
+// }
 
-.modalFotoUser1, .modalFotoUser2, .modalFotoUser3, .modalFotoUser4{
-    border: 1px solid #000;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-}
-.modalNameUser1, .modalNameUser2, .modalNameUser3, .modalNameUser4{
-    font-weight: bold;
-    margin: 5px;
-} 
-.modalFotoUser1{
-    background-image: url(https://randomuser.me/api/portraits/women/29.jpg);
-}
-.modalFotoUser2{
-    background-image: url(https://randomuser.me/api/portraits/women/55.jpg);
-}
-.modalFotoUser3{
-    background-image: url(https://randomuser.me/api/portraits/men/95.jpg);
-}
-.modalFotoUser4{
-    background-image: url(https://randomuser.me/api/portraits/men/5.jpg);
-}
+// .modalFotoUser1, .modalFotoUser2, .modalFotoUser3, .modalFotoUser4{
+//     border: 1px solid #000;
+//     height: 120px;
+//     width: 120px;
+//     border-radius: 50%;
+// }
+// .modalNameUser1, .modalNameUser2, .modalNameUser3, .modalNameUser4{
+//     font-weight: bold;
+//     margin: 5px;
+// } 
+// .modalFotoUser1{
+//     background-image: url(https://randomuser.me/api/portraits/women/29.jpg);
+// }
+// .modalFotoUser2{
+//     background-image: url(https://randomuser.me/api/portraits/women/55.jpg);
+// }
+// .modalFotoUser3{
+//     background-image: url(https://randomuser.me/api/portraits/men/95.jpg);
+// }
+// .modalFotoUser4{
+//     background-image: url(https://randomuser.me/api/portraits/men/5.jpg);
+// }
 
 
-.headerAbout{
-    height: 100px;
-    background-color: #5e889e;
-}
+// .headerAbout{
+//     height: 100px;
+//     background-color: #5e889e;
+// }
