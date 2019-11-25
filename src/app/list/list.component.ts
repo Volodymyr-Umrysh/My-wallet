@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import {BalanceService} from '../services/balance.service';
+import { FormGroup } from '@angular/forms';
 
 export interface List{
   checked: boolean;
@@ -15,7 +16,8 @@ export interface List{
 })
 
 export class ListComponent implements OnInit {
-
+  @ViewChild("closeWindow", {static:false}) closeWindow:ElementRef;
+  form: FormGroup;
 
   constructor(private http: HttpClient, public balance:BalanceService){
 console.log(this.balance)
@@ -27,6 +29,8 @@ console.log(this.balance)
     this.balance.getList()
   }
 
-
+  closeModal(){
+    this.closeWindow.nativeElement.click()
+}
 
 }

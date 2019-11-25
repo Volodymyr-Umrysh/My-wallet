@@ -1,33 +1,6 @@
 {
   "posts": [
     {
-      "title": "suvenir",
-      "sum": "16",
-      "date": "2019-11-19",
-      "type": "expense",
-      "id": 1
-    },
-    {
-      "title": "sss",
-      "sum": 20,
-      "date": "2019-11-03T22:00:00.000Z",
-      "type": "income",
-      "id": 2
-    },
-    {
-      "title": "beer",
-      "sum": "10",
-      "date": "2019-11-03T22:00:00.000Z",
-      "id": 3
-    },
-    {
-      "title": "data",
-      "sum": 5,
-      "date": "2019-11-06T22:00:00.000Z",
-      "type": "expense",
-      "id": 5
-    },
-    {
       "title": "zzz",
       "sum": 15,
       "date": "2019-11-02T15:12:33.000Z",

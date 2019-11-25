@@ -43,7 +43,32 @@
                     <td>{{item.title}}</td>
                     <td>{{item.sum}}$</td>
                     <td><button (click)="balance.selectItem(item)" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">Edit</button></td>
-                    <td><button (click)="balance.deleteItem(item.id)" class="btn btn-danger">Delete</button></td>
+                    <!-- <td><button (click)="balance.deleteItem(item.id)" class="btn btn-danger">Delete</button></td> -->
+
+                    <!-- Button trigger modal -->
+<td> <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+    Delete
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger" id="exampleModalLabel">Attention!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" #closeWindow>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">Are you sure you want to delete the data?</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button (click)="balance.deleteItem(item.id)" type="button" class="btn btn-danger" (click)="closeModal()">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</td>
                   </tr>
                 </tbody>
               </table>
