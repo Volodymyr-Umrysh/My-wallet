@@ -1,17 +1,10 @@
 {
   "posts": [
     {
-      "title": "zzz",
-      "sum": 15,
-      "date": "2019-11-02T15:12:33.000Z",
-      "type": "expense",
-      "id": 7
-    },
-    {
       "title": "aaa",
       "sum": 10,
       "date": "2019-11-04T16:02:16.000Z",
-      "type": "expense",
+      "type": "income",
       "id": 8
     },
     {

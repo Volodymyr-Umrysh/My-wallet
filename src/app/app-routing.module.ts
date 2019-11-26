@@ -10,11 +10,6 @@ const routes: Routes = [
 {path:'about', component: AboutComponent},
 {path:'users', component: UsersComponent},
 
-
-
-
-
-
 ]
 
 @NgModule({

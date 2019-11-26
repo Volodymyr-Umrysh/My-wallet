@@ -4,17 +4,12 @@
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All list</button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item"  href="#">All list</a>
-                    <a class="dropdown-item"  href="#">Income</a>
-                    <a class="dropdown-item"  href="#">Expense</a>
+                    <a class="dropdown-item" (click)="balance.selectFilter('all')" href="#">All list</a>
+                    <a class="dropdown-item" (click)="balance.selectFilter('income')" href="#">Income</a>
+                    <a class="dropdown-item" (click)="balance.selectFilter('expense')" href="#">Expense</a>
                 </div>
               </div>
-              <!-- [(ngModel)]="allList"
-              [(ngModel)]="income"
-              [(ngModel)]="expense" -->
-
-
-              
+            
 </div>
 <hr>
 <div class="list">
@@ -35,8 +30,9 @@
                   <tr *ngFor="let item of balance.list | filter: search  let i=index ">
                     <th scope="row">{{i+1}}</th>
                     <td>
-                      <div *ngIf="condition" class="status red"></div>
-                      <div *ngIf="!condition" class="status green"></div>
+                      <div *ngIf="item.type !== 'income'" class="status red"></div>
+
+                      <div *ngIf="item.type === 'income'" class="status green"></div>
 
                     </td>
                     <td>{{item.date | date}}</td>

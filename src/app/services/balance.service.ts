@@ -41,12 +41,14 @@ export class BalanceService {
   selectItem(item: any) {
     this.selectedItem = item;
   }
-//   toggle(){
-//     this.condition=!this.condition;
-// }
-  // expres(){
-  //   this.expression=!this.expression;
-  //   console.log(this.expression);
-    
-  // }
+
+  selectFilter(item: string) {
+    this.http.get('http://localhost:3000/posts').subscribe((list: any[]) => {
+      if (item === 'all') {
+        this.list = list;
+      } else {
+        this.list = list.filter(listItem => listItem.type === item)
+      }
+    });
+}
 }

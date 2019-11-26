@@ -19,7 +19,7 @@ export class ListComponent implements OnInit {
   @ViewChild("closeWindow", {static:false}) closeWindow:ElementRef;
   form: FormGroup;
   search:'';
-  // condition: boolean=true;
+ 
   
   constructor(private http: HttpClient, public balance:BalanceService){
 console.log(this.balance)
@@ -34,9 +34,5 @@ console.log(this.balance)
   closeModal(){
     this.closeWindow.nativeElement.click()
 }
-// toggle(){
-// if(this.balance.selectedItem.type==="expense"){
-//   this.condition = true;
-// }else this.condition = false;
-// }
+
 }
