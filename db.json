@@ -86,6 +86,48 @@
       "title": "vbbe",
       "sum": "43",
       "id": 22
+    },
+    {
+      "date": "2019-11-07",
+      "title": "vbbe",
+      "sum": "5",
+      "type": "income",
+      "id": 23
+    },
+    {
+      "date": "2019-11-04",
+      "title": "sss",
+      "sum": "5",
+      "type": "expense",
+      "id": 24
+    },
+    {
+      "date": "2019-11-16",
+      "title": "beer",
+      "sum": "10",
+      "type": "income",
+      "id": 25
+    },
+    {
+      "date": "2019-11-13",
+      "title": "sss",
+      "sum": "43",
+      "type": "income",
+      "id": 26
+    },
+    {
+      "date": "2019-11-09",
+      "title": "sss",
+      "sum": "5",
+      "type": "expense",
+      "id": 27
+    },
+    {
+      "date": "2019-11-14",
+      "title": "sss",
+      "sum": "15",
+      "type": "expense",
+      "id": 28
     }
   ]
 }

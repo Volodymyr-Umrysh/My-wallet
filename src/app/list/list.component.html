@@ -35,20 +35,15 @@
                   <tr *ngFor="let item of balance.list | filter: search  let i=index ">
                     <th scope="row">{{i+1}}</th>
                     <td>
-                      <div *ngIf="checked" class="status red"></div>
-                      <div *ngIf="!checked" class="status green"></div>
+                      <div *ngIf="condition" class="status red"></div>
+                      <div *ngIf="!condition" class="status green"></div>
 
                     </td>
                     <td>{{item.date | date}}</td>
                     <td>{{item.title}}</td>
                     <td>{{item.sum}}$</td>
                     <td><button (click)="balance.selectItem(item)" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">Edit</button></td>
-                    <!-- <td><button (click)="balance.deleteItem(item.id)" class="btn btn-danger">Delete</button></td> -->
-
-                    <!-- Button trigger modal -->
-<td> <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-    Delete
-  </button>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Delete</button>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

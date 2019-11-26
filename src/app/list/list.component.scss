@@ -2,21 +2,24 @@
     margin: 10px;
     width: 98%;
 }
-.status{
+// .status{
+//     height: 25px;
+//     width: 25px;
+//     border-radius: 50%;
+//     border: 1px solid #000;
+  
+// }
+.red{
     height: 25px;
     width: 25px;
     border-radius: 50%;
     border: 1px solid #000;
-    &.item.type.expense{
-        background-color: red;
-    }
-    &.item.type.income{
-        background-color: green;
-    }
-}
-.red{
     background-color: red;
 }
 .green{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid #000;
     background-color: green;
 }

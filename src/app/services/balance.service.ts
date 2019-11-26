@@ -4,10 +4,15 @@ import {HttpClient} from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class BalanceService {
-  checked: boolean;
+
+  // condition: boolean=true;
   list: any[] = [];
   selectedItem: any = {};
+
+  
   constructor(private http: HttpClient) {}
   getList() {
     this.http.get('http://localhost:3000/posts').subscribe((list: any[]) => this.list = list);
@@ -36,7 +41,9 @@ export class BalanceService {
   selectItem(item: any) {
     this.selectedItem = item;
   }
-  
+//   toggle(){
+//     this.condition=!this.condition;
+// }
   // expres(){
   //   this.expression=!this.expression;
   //   console.log(this.expression);
