@@ -46,11 +46,8 @@ console.log(this.balance)
           this.sumExpance += Number(element.sum);
         }
       });
-    }, 5000);
-
-
-    console.log(this.sumExpance);
-    
+    }, 2000);
+  
   }
 
   closeModal(){

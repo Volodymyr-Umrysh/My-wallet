@@ -10,7 +10,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { HeaderComponent } from './header/header.component';
-import { BalanceComponent } from './balance/balance.component';
 import { ModalAddListComponent } from './modal-add-list/modal-add-list.component';
 import { ListComponent } from './list/list.component';
 import { FilterPipe } from './pipes/filter.pipe';
@@ -25,7 +24,6 @@ import { UsersComponent } from './users/users.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    BalanceComponent,
     ModalAddListComponent,
     ListComponent,
     FilterPipe,
