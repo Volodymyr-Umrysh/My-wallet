@@ -1,6 +1,6 @@
 .search{
-    margin: 10px;
-    width: 98%;
+    margin: 35px;
+    width: 96%;
 }
 
 .red{
@@ -19,11 +19,13 @@
 }
 
 
-
+.containerList{
+    margin: 18px;
+}
 
 .containerBalance{
     position: relative;
-    border: 2px dashed #5e889e;
+    border: 2px #5e889e;
     height: 250px;
     .imgWallet{
         position: absolute;
@@ -70,6 +72,7 @@ font-size: 26px;
     color: green;
     }
 }
+
 .boxExpense{
     position: absolute;
     top: 140px;

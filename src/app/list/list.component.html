@@ -33,7 +33,7 @@
               </div>
             
 </div>
-<hr>
+
 <div class="list">
         <table class="table">
                 <thead>
@@ -52,9 +52,9 @@
                   <tr *ngFor="let item of balance.list | filter: search  let i=index ">
                     <th scope="row">{{i+1}}</th>
                     <td>
-                      <div *ngIf="item.type !== 'income'" class="status red"></div>
+                      <div *ngIf="item.type !== 'income'" class="red"></div>
 
-                      <div *ngIf="item.type === 'income'" class="status green"></div>
+                      <div *ngIf="item.type === 'income'" class="green"></div>
 
                     </td>
                     <td>{{item.date | date}}</td>

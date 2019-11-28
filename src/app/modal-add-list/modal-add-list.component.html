@@ -4,8 +4,24 @@
       <div class="modal-content">
         <div class="modal-header">
           <div class="status">
-            <p class="statusIncome"><input type="radio" name="type" value="income" [(ngModel)]="balance.selectedItem.type"><b> Income</b></p><Br>
-            <p class="statusExpense"><input checked="true" type="radio" name="type" id="expense" value="expense"  [(ngModel)]="balance.selectedItem.type" ><b> Expense</b></p>
+            <p class="statusIncome">
+            <input 
+              type="radio" 
+              name="type" 
+              value="income" 
+              [(ngModel)]="balance.selectedItem.type"
+              (click)="showBorder()"
+              ><b> Income</b></p><Br>
+            <p class="statusExpense">
+            <input 
+              checked="true" 
+              type="radio" 
+              name="type" 
+              id="expense" 
+              value="expense"
+              (click)="showBorder()"  
+              [(ngModel)]="balance.selectedItem.type"
+              ><b> Expense</b></p>
           </div>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" #closeWindow>
             <span aria-hidden="true">&times;</span>
@@ -64,6 +80,10 @@
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button [disabled]="form.invalid" type="button" class="btn btn-success" (click)="submit()" data-dismiss="modal" (click)="closeModal()">Save</button>
         </div>
+        <div class="borderInfo"></div>
+        <div *ngIf="!show" class="borderRed"></div>
+
+        <div *ngIf="show" class="borderGreen"></div>
       </div>
     </div>
   </div>

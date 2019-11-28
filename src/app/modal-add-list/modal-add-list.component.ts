@@ -5,7 +5,7 @@ import {BalanceService} from '../services/balance.service';
 @Component({
   selector: 'app-modal-add-list',
   templateUrl: './modal-add-list.component.html',
-  styleUrls: ['./modal-add-list.component.scss']
+  styleUrls: ['./modal-add-list.component.scss'],
 })
 
 
@@ -13,6 +13,7 @@ import {BalanceService} from '../services/balance.service';
 export class ModalAddListComponent implements OnInit {
  @ViewChild("closeWindow", {static:false}) closeWindow:ElementRef;
  form: FormGroup;
+ show: any;
  constructor(public balance: BalanceService) { }
 
  ngOnInit() {
@@ -36,5 +37,8 @@ export class ModalAddListComponent implements OnInit {
 
  closeModal(){
     this.closeWindow.nativeElement.click()
+}
+showBorder(){
+  this.show=!this.show;
 }
 }
