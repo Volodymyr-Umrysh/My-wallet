@@ -16,6 +16,7 @@ export class BalanceService {
   constructor(private http: HttpClient) {}
   getList() {
     this.http.get('http://localhost:3000/posts').subscribe((list: any[]) => this.list = list);
+    
   }
   deleteItem(id: number) {
     this.http.delete(`http://localhost:3000/posts/${id}`)

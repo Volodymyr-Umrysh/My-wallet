@@ -4,8 +4,8 @@
       <div class="modal-content">
         <div class="modal-header">
           <div class="status">
-            <p class="statusIncome"><input type="radio" name="type" value="income" [(ngModel)]="balance.selectedItem.type" (click)="toggle()" ><b> Income</b></p><Br>
-            <p class="statusExpense"><input checked="true" type="radio" name="type" value="expense"  [(ngModel)]="balance.selectedItem.type" ><b> Expense</b></p>
+            <p class="statusIncome"><input type="radio" name="type" value="income" [(ngModel)]="balance.selectedItem.type"><b> Income</b></p><Br>
+            <p class="statusExpense"><input checked="true" type="radio" name="type" id="expense" value="expense"  [(ngModel)]="balance.selectedItem.type" ><b> Expense</b></p>
           </div>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" #closeWindow>
             <span aria-hidden="true">&times;</span>

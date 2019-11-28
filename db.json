@@ -3,28 +3,21 @@
     {
       "title": "beer",
       "sum": 5,
-      "date": "2019-11-06T22:00:00.000Z",
-      "type": "income",
-      "id": 12
-    },
-    {
-      "title": "beer",
-      "sum": 5,
-      "date": "2019-11-06T22:00:00.000Z",
+      "date": "2019-11-06",
       "type": "expense",
       "id": 13
     },
     {
       "title": "data",
       "sum": 10,
-      "date": "2019-11-06T22:00:00.000Z",
+      "date": "2019-11-13",
       "type": "expense",
       "id": 14
     },
     {
       "title": "sss",
       "sum": 10,
-      "date": "2019-11-06T22:00:00.000Z",
+      "date": "2019-11-19",
       "type": "expense",
       "id": 15
     },
@@ -37,18 +30,21 @@
     },
     {
       "date": "2019-11-15",
+      "type": "expense",
       "title": "beer",
       "sum": "15",
       "id": 18
     },
     {
       "date": "2019-11-03",
+      "type": "expense",
       "title": "vase",
       "sum": "50",
       "id": 20
     },
     {
       "date": "2019-11-21",
+      "type": "expense",
       "title": "tool",
       "sum": "11",
       "id": 21
@@ -56,6 +52,7 @@
     {
       "date": "2019-11-01",
       "title": "vbbe",
+      "type": "expense",
       "sum": "43",
       "id": 22
     },
@@ -107,6 +104,13 @@
       "sum": "900",
       "type": "income",
       "id": 29
+    },
+    {
+      "date": "2019-11-27",
+      "title": "food",
+      "sum": "50",
+      "type": "expense",
+      "id": 30
     }
   ]
 }

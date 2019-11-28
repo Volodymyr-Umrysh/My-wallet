@@ -22,11 +22,11 @@ export class ListComponent implements OnInit {
   s:number=0;
   sumIncome: number = 0;
   sumExpance: number = 0;
-  array;
+  
 
   
   constructor(private http: HttpClient, public balance:BalanceService){
-console.log(this.balance)
+
   }
 
   ngOnInit() {
@@ -34,8 +34,8 @@ console.log(this.balance)
     
 
     setTimeout(() => {
-      this.array = this.balance.list;
-      this.array.forEach(element => {
+      
+      this.balance.list.forEach(element => {
   
         if(element.type === 'income'){
   this.s += Number(element.sum);
@@ -46,8 +46,14 @@ console.log(this.balance)
           this.sumExpance += Number(element.sum);
         }
       });
-    }, 2000);
+    }, 500);
   
+  }
+
+  showList(){
+    if(this.balance.selectedItem.type===undefined){
+   document.getElementById('expense').checked = true;
+    }
   }
 
   closeModal(){
