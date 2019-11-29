@@ -9,6 +9,11 @@ const routes: Routes = [
 {path:'', component: ListComponent},
 {path:'about', component: AboutComponent},
 {path:'users', component: UsersComponent},
+{path:'users/infouser1', component: UsersComponent},
+{path:'users/infouser2', component: UsersComponent},
+{path:'users/infouser3', component: UsersComponent},
+{path:'users/infouser4', component: UsersComponent},
+
 
 ]
 

@@ -10,7 +10,11 @@
         <p class="nameUser1">Olivia</p>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-sm moreUser1" data-toggle="modal" data-target="#exampleModal1">
+<button [routerLink]="['/users/infouser1']" routerLinkActive="router-link-active"
+type="button" 
+class="btn btn-sm moreUser1" 
+data-toggle="modal" 
+data-target="#exampleModal1">
 More info
 </button>
 
@@ -41,7 +45,11 @@ More info
             <p class="nameUser2">Judith</p>
             
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-sm moreUser2" data-toggle="modal" data-target="#exampleModal2">
+<button [routerLink]="['/users/infouser2']" routerLinkActive="router-link-active"
+type="button" 
+class="btn btn-sm moreUser2" 
+data-toggle="modal" 
+data-target="#exampleModal2">
 More info
 </button>
 
@@ -70,7 +78,11 @@ More info
             <p class="nameUser3">Nicholas</p>
 
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-sm moreUser3" data-toggle="modal" data-target="#exampleModal3">
+<button [routerLink]="['/users/infouser3']" routerLinkActive="router-link-active"
+type="button" 
+class="btn btn-sm moreUser3" 
+data-toggle="modal" 
+data-target="#exampleModal3">
 More info
 </button>
 
@@ -99,7 +111,11 @@ More info
             <p class="nameUser4">Carlos</p>
 
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-sm moreUser4" data-toggle="modal" data-target="#exampleModal4">
+<button [routerLink]="['/users/infouser4']" routerLinkActive="router-link-active"
+type="button" 
+class="btn btn-sm moreUser4" 
+data-toggle="modal" 
+data-target="#exampleModal4">
 More info
 </button>
 
@@ -124,3 +140,4 @@ More info
 </div>
     </div>
 </div>
+<router-outlet></router-outlet>
