@@ -1,32 +1,30 @@
-.status{
-    display: flex;
-    .statusIncome{
-        color: green;
-    }
-    .statusExpense{
-        margin-left: 25px;
-        color: red;
-    }
-    
-}
-form{
-    margin: 8px;
-}
-input{
-    &.ng-invalid.ng-touched{
-        border: 1px solid red;
-    }
-   
-}
-.validation{
+.status {
+  display: flex;
+  .statusIncome {
+    color: green;
+  }
+  .statusExpense {
+    margin-left: 25px;
     color: red;
-    font-style: italic;
+  }
 }
-.borderRed{
-    height: 25px;
-    background: red;
+form {
+  margin: 8px;
 }
-.borderGreen{
-    height: 25px;
-    background: green;
+input {
+  &.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+}
+.validation {
+  color: red;
+  font-style: italic;
+}
+.borderRed {
+  height: 25px;
+  background: red;
+}
+.borderGreen {
+  height: 25px;
+  background: green;
 }

@@ -5,21 +5,21 @@
         <div class="modal-header">
           <div class="status">
             <p class="statusIncome">
-            <input 
+            <input #abcde
               type="radio" 
               name="type" 
               value="income" 
               [(ngModel)]="balance.selectedItem.type"
-              (click)="showBorder()"
+              (click)="showBorderGreen()"
               ><b> Income</b></p><Br>
             <p class="statusExpense">
             <input 
-              checked="true" 
+              checked
               type="radio" 
               name="type" 
               id="expense" 
               value="expense"
-              (click)="showBorder()"  
+              (click)="showBorderRed()"  
               [(ngModel)]="balance.selectedItem.type"
               ><b> Expense</b></p>
           </div>
@@ -81,9 +81,9 @@
           <button [disabled]="form.invalid" type="button" class="btn btn-success" (click)="submit()" data-dismiss="modal" (click)="closeModal()">Save</button>
         </div>
         <div class="borderInfo"></div>
-        <div *ngIf="!show" class="borderRed"></div>
+        <div *ngIf="showR" class="borderRed"></div>
 
-        <div *ngIf="show" class="borderGreen"></div>
+        <div *ngIf="showG" class="borderGreen"></div>
       </div>
     </div>
   </div>

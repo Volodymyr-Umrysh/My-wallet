@@ -9,6 +9,7 @@ export interface List{
   title: string;
   sum: number;
 }
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -22,7 +23,7 @@ export class ListComponent implements OnInit {
   s:number=0;
   sumIncome: number = 0;
   sumExpance: number = 0;
-  
+  checked: boolean;
 
   
   constructor(private http: HttpClient, public balance:BalanceService){
@@ -52,6 +53,7 @@ export class ListComponent implements OnInit {
 
   showList(){
     if(this.balance.selectedItem.type===undefined){
+      //@ts-ignore
    document.getElementById('expense').checked = true;
     }
   }

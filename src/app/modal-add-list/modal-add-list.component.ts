@@ -13,7 +13,9 @@ import {BalanceService} from '../services/balance.service';
 export class ModalAddListComponent implements OnInit {
  @ViewChild("closeWindow", {static:false}) closeWindow:ElementRef;
  form: FormGroup;
- show: any;
+ 
+  showG: boolean;
+  showR: boolean = true;
  constructor(public balance: BalanceService) { }
 
  ngOnInit() {
@@ -38,7 +40,13 @@ export class ModalAddListComponent implements OnInit {
  closeModal(){
     this.closeWindow.nativeElement.click()
 }
-showBorder(){
-  this.show=!this.show;
+showBorderRed(){
+  this.showR=true;
+  this.showG=false;
+
+}
+showBorderGreen(){
+  this.showG=true;
+  this.showR=false;
 }
 }
