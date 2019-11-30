@@ -8,9 +8,9 @@ import {HttpClient} from '@angular/common/http';
 
 export class BalanceService {
 
-  // condition: boolean=true;
   list: any[] = [];
   selectedItem: any = {};
+  id: number;
 
   
   constructor(private http: HttpClient) {}

@@ -24,6 +24,7 @@ export class ListComponent implements OnInit {
   sumIncome: number = 0;
   sumExpance: number = 0;
   checked: boolean;
+  id: number;
 
   
   constructor(private http: HttpClient, public balance:BalanceService){
@@ -61,5 +62,7 @@ export class ListComponent implements OnInit {
   closeModal(){
     this.closeWindow.nativeElement.click()  
 }
-
+delete(){
+  this.balance.deleteItem(this.id)
+}
 }
